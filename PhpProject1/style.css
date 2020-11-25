@@ -1,0 +1,471 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Nov, 2019, 12:56:56 PM
+    Author     : GOWRI
+*/
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding-top:100px;
+  
+}
+
+body 
+{
+background: linear-gradient(#10416b, black); 
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+#content{
+    min-height: 600px;
+}
+
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url('img/res.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+#banner_content1 {
+    position: relative;
+    
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgba(35, 7, 77, 0.6);
+    background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+    max-width: 300px;
+}
+#banner_content2 {
+    position: relative;
+    
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgba(35, 7, 77, 0.6);
+    background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+    max-width: 600px;
+}
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#cameras:before, #watches:before, #shirts:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+
+#login-panel .panel-footer{
+    font-weight:normal;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: orangered;
+    color:blue;
+    bottom: 0;
+    width: 100%;
+}
+
+.red{
+    color:red;
+}
+
+#settings-container{
+    margin-bottom:10px;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
+
+.remove_item_link{
+    color:#0000ff;
+    background-color: palevioletred;
+}
+.carousel {
+    height: 100%;
+   
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+
+
+
+
+ 
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+*1{
+    margin: 0;
+    padding: 0;
+}
+.rate1 {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate1:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate1:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate1:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate1 > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate1:not(:checked) > label:hover,
+.rate1:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate1 > input:checked + label:hover,
+.rate1 > input:checked + label:hover ~ label,
+.rate1 > input:checked ~ label:hover,
+.rate1 > input:checked ~ label:hover ~ label,
+.rate1 > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+*2{
+    margin: 0;
+    padding: 0;
+}
+.rate2 {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate2:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate2:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate2:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate2 > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate2:not(:checked) > label:hover,
+.rate2:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate2 > input:checked + label:hover,
+.rate2 > input:checked + label:hover ~ label,
+.rate2 > input:checked ~ label:hover,
+.rate2 > input:checked ~ label:hover ~ label,
+.rate2 > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+*3{
+    margin: 0;
+    padding: 0;
+}
+.rate3 {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate3:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate3:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate3:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate3 > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate3:not(:checked) > label:hover,
+.rate3:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate3 > input:checked + label:hover,
+.rate3 > input:checked + label:hover ~ label,
+.rate3 > input:checked ~ label:hover,
+.rate3 > input:checked ~ label:hover ~ label,
+.rate3 > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+*4{
+    margin: 0;
+    padding: 0;
+}
+.rate4 {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate4:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate4:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate4:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate4 > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate4:not(:checked) > label:hover,
+.rate4:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate4 > input:checked + label:hover,
+.rate4 > input:checked + label:hover ~ label,
+.rate4 > input:checked ~ label:hover,
+.rate4 > input:checked ~ label:hover ~ label,
+.rate4 > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+*5{
+    margin: 0;
+    padding: 0;
+}
+.rate5 {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate5:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate5:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate5:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate5 > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate5:not(:checked) > label:hover,
+.rate5:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate5 > input:checked + label:hover,
+.rate5 > input:checked + label:hover ~ label,
+.rate5 > input:checked ~ label:hover,
+.rate5 > input:checked ~ label:hover ~ label,
+.rate5 > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+html {
+    overflow-y: scroll;
+}
+
+html, body {
+    padding-top: 27px;
+    background: center no-repeat fixed url('img/download.jfif');
+    background-size: cover;
+    background: #EEEEEE;
+    width: 100%;
+	
+}
+
+.modal-pos {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+
+.modal {
+    overflow-y: auto;
+}
+
+.modal-open {
+    overflow: auto;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.navbar-brand{
+    font-size:20px;
+}
+
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
+
+
